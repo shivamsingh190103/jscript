@@ -40,3 +40,39 @@ let someNumber=33//number
 let stringNumber= String(someNumber)//typecast into the string
 console.log(stringNumber);//33
 console.log(typeof(stringNumber))//string
+
+
+
+
+
+//*****operations****/
+let value=3
+let negValue=-value
+console.log(negValue)//-3
+
+
+let str1="hello"
+let str2="shivam"
+let str3=str1+str2
+console.log(str3);
+
+
+
+//dont rely on this ,can be fatal
+console.log("1"+2)
+console.log(1+"2");
+console.log("1"+2+2);
+console.log(1+2+"2");
+console.log(typeof(1+2+"2"));
+
+console.log(+true);//1
+console.log(+"");// 0
+
+let num1,num2,num3
+
+num1=num2=num3=2+2
+console.table({num1,num2,num3});
+
+let gameCounter=100
+gameCounter++;
+console.log(gameCounter);//101
