@@ -49,3 +49,31 @@ console.log(typeof(myFunction));//function object
 // note: all non primitive data types are function and for function itself it is function object
 
 
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//+++understanding Stack and heap memory in javascript
+
+//there are two types of memory stack memory and heap memory
+//stack(primitive, means when we ask a value then its copy is created ), heap(non-Primitive refrence to original value is given)
+
+let myName="shivam"
+let anotherName=myName
+anotherName="JspayProductEng"
+
+console.log(myName)
+console.log(anotherName);//here value of myName do not changed as it created a copy of myName while giving it to the anotherName, so anything changed in the anotherName will not affect my name
+
+// using non-primituve data type 
+let userOne = { //here userOne is the primitive data type thats store in stack 
+    //but object is the non-primitive type take refrence to actual value in heap
+
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne;
+//lets change some value in object
+//to change anything or access object use dot(.)
+userTwo.email="shivam@google.com"
+console.log(userOne)
+//as we can see change in userTwo attribute changes the actual value in the userOnce from where refrence have been taken
