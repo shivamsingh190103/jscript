@@ -23,22 +23,22 @@ console.log(myArr.includes(9));//false boolean
 console.log(myArr.indexOf(9));//-1 as 9 is not present
 console.log(myArr.indexOf(4))//3 as 4 is presentat 3rd index
 
-const newArr=myArr.join()
-console.log(myArr);//[ 0, 1, 2, 4, 5 ]
-console.log(newArr);//converted to string 0,1,2,4,5
+const newArray=myArr.join()
+console.log(myArray);//[ 0, 1, 2, 4, 5 ]
+console.log(newArray);//converted to string 0,1,2,4,5
 
 
 
 //slice, splice
-console.log("A",myArr)//A [ 0, 1, 2, 4, 5 ]
-const myn1=myArr.slice(1,3)
+console.log("A",myArray)//A [ 0, 1, 2, 4, 5 ]
+const myn1=myArray.slice(1,3)
 console.log(myn1);//[ 1, 2 ]
-console.log("B",myArr);//B [ 0, 1, 2, 4, 5 ]
+console.log("B",myArray);//B [ 0, 1, 2, 4, 5 ]
 
-console.log("C",myArr)//C [ 0, 1, 2, 4, 5 ]
-const myn2=myArr.splice(1,3)
+console.log("C",myArray)//C [ 0, 1, 2, 4, 5 ]
+const myn2=myArray.splice(1,3)
 console.log(myn2);//[ 1, 2, 4 ]
-console.log("D",myArr);//D [ 0, 5 ]. here orginal array got manipulated that content got removed
+console.log("D",myArray);//D [ 0, 5 ]. here orginal array got manipulated that content got removed
   
 
 
